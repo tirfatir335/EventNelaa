@@ -1,0 +1,64 @@
+/* ====== NAVBAR SESUAI GAMBAR ====== */
+
+/* Warna abu muda */
+.navbar {
+  background-color: #e5e5e5 !important;
+  border: none;
+}
+
+/* Logo kiri */
+.navbar-brand img {
+  height: 40px;
+}
+
+/* Menu kanan */
+.navbar-nav .nav-link {
+  font-weight: 700;
+  color: #000 !important;
+  margin-right: 25px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Efek hover warna oranye */
+.navbar-nav .nav-link:hover {
+  color: #ff7a00 !important;
+}
+
+/* Garis bawah oranye saat hover */
+.navbar-nav .nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ff7a00;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Tombol login kanan */
+.btn-login {
+  background-color: #ff7a00;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 6px;
+  padding: 8px 18px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+  background-color: #e66b00;
+  color: #fff;
+}
+
+/* Biar menu dan tombol sejajar rapi */
+.navbar-nav {
+  align-items: center;
+}
